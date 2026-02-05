@@ -1,0 +1,212 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Crimson Pro', serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #1e293b;
+    background-color: #f8fafc;
+    padding: 20px;
+}
+
+/* ==================== TYPOGRAFI ==================== */
+
+h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+    color: #2563eb;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #0ea5e9;
+}
+
+p {
+    margin-bottom: 20px;
+    max-width: 75ch;
+}
+
+/* ==================== LAYOUT ==================== */
+
+header {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    margin: -20px -20px 50px -20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 80px;
+    color: #64748b;
+    border-top: 2px solid #e2e8f0;
+}
+
+/* ==================== NAVIGATION ==================== */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+nav a {
+    color: #1e293b;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0ea5e9;
+}
+
+/* ==================== BILLEDER ==================== */
+
+figure {
+    margin: 40px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    color: #64748b;
+    font-style: italic;
+}
+
+/* ==================== LISTER ==================== */
+
+ul {
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+/* ==================== LINKS ==================== */
+
+a {
+    color: #0ea5e9;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2563eb;
+}
+
+/* ==================== GALLERI ==================== */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.gallery figure {
+    margin: 0;
+}
+
+.gallery img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ==================== RESPONSIVT DESIGN ==================== */
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+        margin-top: 35px;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    header {
+        padding: 30px 20px;
+        margin: -15px -15px 40px -15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    section {
+        margin-bottom: 40px;
+    }
+}
+
+/* ==================== GOOGLE FONTS IMPORT ==================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Crimson+Pro:wght@400;600&display=swap');
