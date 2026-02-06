@@ -20,6 +20,10 @@ header h1 {
     font-size: 2rem;
 }
 
+h1 {
+text-align: center;
+
+}
 nav ul {
     list-style: none;
     padding: 0;
@@ -118,4 +122,31 @@ footer p {
     height: auto;
   }
 }
+/* CTA BUTTON */
 
+.cta-btn {
+    display: inline-block;
+    margin: 50px;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: lightskyblue;
+    color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.cta-btn:hover {
+    background-color: #1e40af;
+}
+
+img{
+ max-width: 100%;       
+    height: auto;      
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;       
+    object-fit: cover; 
+
+
+}
