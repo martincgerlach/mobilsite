@@ -123,10 +123,9 @@ footer p {
   }
 }
 /* CTA BUTTON */
-
 .cta-btn {
     display: inline-block;
-    margin: 50px;
+    margin: 1em;
     margin-top: 10px;
     padding: 10px 16px;
     background-color: lightskyblue;
@@ -135,7 +134,6 @@ footer p {
     font-weight: 700;
     border-radius: 8px;
 }
-
 .cta-btn:hover {
     background-color: #1e40af;
 }
@@ -146,7 +144,5 @@ img{
     border-radius: 8px;
     display: block;
     margin: 0 auto;       
-    object-fit: cover; 
-
-
+    object-fit: cover;
 }
